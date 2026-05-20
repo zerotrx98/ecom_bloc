@@ -1,4 +1,6 @@
-abstract class SplashScreenState {}
+part of 'splash_screen_bloc.dart';
+
+sealed class SplashScreenState {}
 
 class SplashScreenInitial extends SplashScreenState {}
 
