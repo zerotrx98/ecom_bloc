@@ -1,8 +1,5 @@
-import 'package:ecom_b/features/login_screen/bloc/login_bloc.dart';
-import 'package:ecom_b/features/splash_screen/bloc/splash_screen_bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'features/splash_screen/view/splash_screen_view.dart';
 
@@ -19,6 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(debugShowCheckedModeBanner: false, home: SplashScreenView());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreenView(),
+    );
   }
 }
